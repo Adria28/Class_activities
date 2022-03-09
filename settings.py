@@ -13,7 +13,6 @@ ROOMS = [
     dict(
         name="PD",
         display_name='PD',
-        use_secure_urls= False
     )
 ]
 
