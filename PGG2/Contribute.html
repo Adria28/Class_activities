@@ -1,0 +1,21 @@
+{{ block title }}Contribució{{ endblock }}
+{{ block content }}
+
+    <p>
+        En aquest joc formaràs part d'un grup de
+        {{ C.PLAYERS_PER_GROUP }},
+        cada membre del grup disposarà de {{ C.ENDOWMENT }} punts, i haurà de decidir quants d'aquests punts
+        posar en un projecte comú. Tots els punts que els membres del grup posin al projecte comú
+        es multiplicaran per {{ C.MULTIPLIER }} i després es repartiran a parts iguals entre tots els membres del grup.
+        Un cop tots els membres del grup hagin decidit la seva contribució de punts al projecte comú,
+        tots els membres del grup podran observar les contribucions dels altres membres del grup i "castigar"
+        els altres membres del grup si així ho desitgen. El càstig consistirà en gastar alguns punts propis per
+        reduir el total de punts d'algun altre membre del grup.
+    </p>
+
+
+    {{ formfields }}
+
+    {{ next_button }}
+
+{{ endblock }}

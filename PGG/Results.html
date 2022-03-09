@@ -1,0 +1,15 @@
+{{ block title }}<center><strong>Resultats</strong></center>{{ endblock }}
+{{ block content }}
+
+<p>
+    Has començat el joc amb 20 punts,
+    dels quals has decidit contribuir {{ player.contribution }} punts al projecte comú.
+    La suma de les contribucions al projecte comú de tots els membres del grup es de {{ group.total_contribution }},
+    i com a resultat has rebut {{ group.individual_share }} després de que les contribucions s'hagin multiplicat per 2
+    i repartit a parts iguals entre tots els membres del grup.
+    El teu total de punts obtinguts es de <strong><font color = blue>{{ player.payoff }}</font></strong>.
+</p>
+
+{{ endblock }}
+
+

@@ -1,0 +1,33 @@
+{{ block title }}Resultats{{ endblock }}
+{{ block content }}
+
+    <table class="table">
+        <tr>
+            <th>La teva contribució</th>
+            <td>{{ player.contribution }}</td>
+        </tr>
+        <tr>
+            <th>Contribucions totals del grup</th>
+            <td>{{ group.total_contribution }}</td>
+        </tr>
+        <tr>
+            <th>Punts rebuts del projecte comú (es el mateix per a cada membre del grup)</th>
+            <td>{{ group.individual_share }}</td>
+        </tr>
+        <tr>
+            <th>Càstig rebut</th>
+            <td>{{ player.punishment_received }}</td>
+        </tr>
+        <tr>
+            <th>Cost dels teus càstigs</th>
+            <td>{{ player.self_cost_of_punishment }}</td>
+        </tr>
+        <tr>
+            <th>Punts totals finals obtinguts</th>
+            <td>{{ player.payoff }}</td>
+        </tr>
+    </table>
+
+{{ endblock }}
+
+

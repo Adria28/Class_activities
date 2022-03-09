@@ -7,6 +7,25 @@ SESSION_CONFIGS = [
         app_sequence=['prisoners_dilemma'],
         num_demo_participants=2,
      ),
+
+    dict(
+        name='prisoner_2',
+        display_name="Dilema dels presoners comunicació",
+        app_sequence=['prisoners_dilemma_game'],
+        num_demo_participants=2,
+    ),
+    dict(
+        name='public_goods_game',
+        display_name="Joc de béns públics",
+        app_sequence=['PGG'],
+        num_demo_participants=4,
+    ),
+    dict(
+        name='punishment',
+        display_name="Joc de béns públics amb càstig",
+        app_sequence=['PGG2'],
+        num_demo_participants=4,
+    )
 ]
 
 ROOMS = [

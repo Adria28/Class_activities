@@ -1,0 +1,17 @@
+{{ block title }}<strong><center>Contribució</center></strong>{{ endblock }}
+{{ block content }}
+
+<p>
+        En aquest joc formaràs part d'un grup de
+        {{ Constants.players_per_group }},
+        cada membre del grup disposarà de 20 punts, i haurà de decidir quants d'aquests punts
+        posar en un projecte comú. Tots els punts que els membres del grup posin al projecte comú
+        es multiplicaran per {{ Constants.multiplier }} i després es repartiran a parts iguals entre tots els membres del grup.
+
+</p>
+
+{% formfields %}
+
+{% next_button %}
+
+{{ endblock }}
