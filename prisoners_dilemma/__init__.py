@@ -13,9 +13,9 @@ class C(BaseConstants):
     PLAYERS_PER_GROUP = 2
     NUM_ROUNDS = 1
     INSTRUCTIONS_TEMPLATE = 'prisoners_dilemma/instructions.html'
-    PAYOFF_A = cu(300)
-    PAYOFF_B = cu(200)
-    PAYOFF_C = cu(100)
+    PAYOFF_A = cu(30)
+    PAYOFF_B = cu(20)
+    PAYOFF_C = cu(10)
     PAYOFF_D = cu(0)
 
 
@@ -58,7 +58,7 @@ def set_payoff(player: Player):
 
 # PAGES
 class Introduction(Page):
-    timeout_seconds = 100
+    timeout_seconds = 200
 
 
 class Decision(Page):
